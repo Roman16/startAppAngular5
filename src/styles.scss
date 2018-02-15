@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "pages/header_footer/app.header";
+
+//----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
+
+body {
+  margin: 0;
+  background: aliceblue;
+
+  font-family: "Arial";
+}
+
+div:focus,
+li:focus {
+  outline: none;
+}
