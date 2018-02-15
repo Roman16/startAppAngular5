@@ -2,7 +2,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule} from '@angular/router';
 
 import { HomePageComponent } from '../pages/home/home';
-import { GalleryPageComponent} from '../pages/gallery/gallery';
+import { AboutPageComponent} from '../pages/about/about';
 
 const appRoutes: Routes = [
     {
@@ -10,8 +10,8 @@ const appRoutes: Routes = [
         component: HomePageComponent
     },
     {
-        path: 'gallery',
-        component: GalleryPageComponent
+        path: 'about',
+        component: AboutPageComponent
     }
 ];
 

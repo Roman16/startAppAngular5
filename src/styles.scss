@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "pages/header_footer/app.header";
+@import "components/navbar/navbar.component";
+@import "pages/home/home";
+@import "pages/about/about";
 
 //----------------------------------------------------------------------------
 //----------------------------------------------------------------------------
@@ -8,7 +10,7 @@
 
 body {
   margin: 0;
-  background: aliceblue;
+  background: #fff;
 
   font-family: "Arial";
 }
@@ -17,3 +19,46 @@ div:focus,
 li:focus {
   outline: none;
 }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+//custom flex style
+.row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+
+  padding: 0 !important;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  flex: 1;
+}
+.col {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+
+  padding: 0 !important;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  flex: 1;
+}
+.space-between {
+  justify-content: space-between;
+}
+//-----------------------------------

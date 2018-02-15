@@ -1,24 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpModule} from '@angular/http';
+import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
 import { routing } from './app.routing.module';
 
-import {HeaderComponent} from '../pages/header_footer/header.footer';
 import {HomePageComponent} from '../pages/home/home';
-import {GalleryPageComponent} from '../pages/gallery/gallery';
+import {AboutPageComponent} from '../pages/about/about';
+import { NavbarComponent } from '../components/navbar/navbar.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        HeaderComponent,
         HomePageComponent,
-        GalleryPageComponent
+        AboutPageComponent,
+        NavbarComponent
     ],
     imports: [
         BrowserModule,
-        routing
+        routing,
+        HttpModule,
+        FormsModule
     ],
     providers: [],
     bootstrap: [AppComponent]
